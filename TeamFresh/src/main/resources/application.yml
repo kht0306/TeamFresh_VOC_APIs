@@ -1,0 +1,24 @@
+# http port set
+server:
+  port: 8803
+  
+spring:
+# Oracle Connect
+  datasource: 
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521/xe
+    username: kht0306
+    password: kht0306
+
+  # view resolver(Template -> JSP Use)
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+# Mybatis
+mybatis:
+  type-aliases-package: com.oracle.TeamFresh.model
+  
+  config-location: classpath:configuration.xml
+  mapper-locations: classpath:mappers/*.xml
