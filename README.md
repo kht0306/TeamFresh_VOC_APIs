@@ -1,1 +1,1 @@
-# kht0306-TeamFresh_VOC_APIs
+# (주)팀프레시 VOC 및 배상 API개발 프로젝트
